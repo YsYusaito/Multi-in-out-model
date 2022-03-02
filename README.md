@@ -92,10 +92,10 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
    ![inference_log](https://user-images.githubusercontent.com/80863816/156318013-a4c16837-5f0b-4d1c-be59-6c96d2b50c24.PNG)  
    
    First element of y0_out： score of male   
-   Second y0_out： score of female   
+   Second element of y0_out： score of female   
 
-   First y1_out： score of smiling   
-   Second y1_out： score of non-smiling   
+   First element of y1_out： score of smiling   
+   Second element of y1_out： score of non-smiling   
 
 
 
