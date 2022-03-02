@@ -48,7 +48,7 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
 
 # Procedure of model training
 1. git clone  
-   Link：https://enosta.olympus.co.jp/gitlab_01/ai-community/model-zoo/multi-in-out-model.git
+   Link：git@github.com:YsYusaito/Multi-in-out-model.git or 
 2. 学習データダウンロード
    - celebaの[公式サイト](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)にアクセス  
    - Google Driveをクリック  
