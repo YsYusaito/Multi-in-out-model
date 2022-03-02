@@ -43,7 +43,7 @@ python, pytorch, torchvision, cuda toolkit以外は最新版のものをイン�
 ・ロス     
 ![loss](https://user-images.githubusercontent.com/80863816/156318018-d3698a64-7fc8-48be-9e48-ede1326cbcb1.png)   
 ・精度   
-![acc](/uploads/b78dd896259049d6db0ce6c7cafcd325/acc.png)   
+![acc](https://user-images.githubusercontent.com/80863816/156318005-aff1b6ad-b3be-4252-b1b1-0f0cb54d3a7b.png) 
 
 # モデル学習までの流れ
 1. git clone  
@@ -53,13 +53,13 @@ python, pytorch, torchvision, cuda toolkit以外は最新版のものをイン�
    - Google Driveをクリック  
    ![celeba_google_drive](/uploads/0e9d642230c17ca4b305500f246878c1/celeba_google_drive.PNG)  
    - imgをクリック  
-   ![celeba_img](/uploads/d97ddaa3226180a110a1cf9bda5ed18f/celeba_img.PNG)  
+   ![celeba_img](https://user-images.githubusercontent.com/80863816/156318958-99702ed0-1aaa-4600-9864-90c1fae2db24.PNG)  
    - img_align_celeba.zipをダウンロード  
-   ![celeba_zip](/uploads/9147292c88e282b69b21b89d16218b6e/celeba_zip.PNG)  
+   ![celeba_zip](https://user-images.githubusercontent.com/80863816/156318966-eeb01ce5-158b-41e8-8b1a-51ee19705562.PNG)  
    - Annoをクリック  
-   ![celeba_anno](/uploads/1836a10576ab606e11116f5f8f45acfc/celeba_anno.PNG)  
+   ![celeba_anno](https://user-images.githubusercontent.com/80863816/156318967-0067d57d-1117-4f8e-91e9-2582a729e7cf.PNG)  
    - list_attr_celeba.txtのダウンロード  
-   ![celeba_list_attr](/uploads/092ad1fc3807d21f0c4122e70e5dd15b/celeba_list_attr.PNG)
+   ![celeba_list_attr](https://user-images.githubusercontent.com/80863816/156318963-c0172936-8a24-4f1b-8ae5-ef4ffc2e0d86.PNG)
 
 3. 本readmeがあるフォルダ内で、img_align_celeba.zipを展開。するとimg_align_celebaフォルダが出くる。
 4. 本readmeがあるフォルダ内で、フォルダ「CelebA_dataset」を作成
@@ -90,7 +90,7 @@ python, pytorch, torchvision, cuda toolkit以外は最新版のものをイン�
    # モデルを用いた推論
    test_inference.pyの実行   
    以下のログが表示されたら、成功   
-   ![inference_log](/uploads/12f554738f860fb88eab8505c585c67f/inference_log.PNG)
+   ![inference_log](https://user-images.githubusercontent.com/80863816/156318013-a4c16837-5f0b-4d1c-be59-6c96d2b50c24.PNG)
    
    y0_outの1つ目の要素： maleのスコア   
    y0_outの2つ目の要素： femaleのスコア   
