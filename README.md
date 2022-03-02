@@ -1,9 +1,9 @@
 # Multi in out model
 
-# 概要
-[環境]
-Anacondaで仮想環境を作成し、以下のパッケージをインストールした。
-使用GPU:Quadro RTX 6000  
+# Overview
+[Environment]
+I created a virtual environment with Anaconda and installed the following packages.
+GPU:Quadro RTX 6000  
 ・python 3.7.11  
 ・pytorch 1.6.0  
 ・torchvision 0.7.0  
@@ -14,26 +14,27 @@ Anacondaで仮想環境を作成し、以下のパッケージをインストー
 ・pillow 8.4.0  
 ・tqdm 4.62.3  
 
-python, pytorch, torchvision, cuda toolkit以外は最新版のものをインストールした結果、上記のようなバージョンとなった。
-※tqdmのみ、pipでインストール。
+I installed the latest versions of everything except python, pytorch, torchvision, and cuda toolkit.
+※Only tqdm was installed by pip.
 
-※使用するGPUによって、対応するcuda tool kitや、pytorch、torch visionのバージョンが異なる。[こちら](https://pytorch.org/get-started/previous-versions/)を参照にcuda tool kitや、pytorch、torch visionの適切なバージョンをインストールすること。
+※Supported cuda tool kit, pytorch, and torch vision versions differ depending on the GPU used.   
+Please install the appropriate versions of the cuda tool kit, pytorch, and torch vision, see [here](https://pytorch.org/get-started/previous-versions/).
 
-[学習データ]  
+[Data]  
 ・[CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)  
 ・[CelebAとは](http://cedro3.com/ai/celeba-dataset-attribute/)
 
 ![celeba_overview](https://user-images.githubusercontent.com/80863816/156318009-733d02b1-4027-4bcb-9438-a6607b34e0c5.PNG)  
-↑のように、笑っている男女の画像が30万枚近くある。
+↑There are nearly 300,000 images of men and women laughing.
 
-[ネットワーク構造]  
+[Network]  
 ![multi_inout_network](https://user-images.githubusercontent.com/80863816/156318015-6f4096a6-8dfc-4809-9c08-2236d7123adb.PNG)   
-[ネットワークの元ネタ](https://dajiro.com/entry/2020/06/27/160255)
+[Original information of this network](https://dajiro.com/entry/2020/06/27/160255)
 
-・学習では、画像が、male, femaleのどちらかなのか(第一のラベル)、smiling, non smilingのどちらなのか(第二のラベル)を判別できるようにした。
-・モデル全体のパラメータを学習により、更新した。
+・In the learning process, we tried to determine whether the image was male or female (first label), and whether it was smiling or non-smiling (second label).
+・The parameters of the entire model were updated by learning.
 
-・male, female/smiling, non smiling それぞれのくくりに対して6000枚の画像、計24000枚をデータセットから取得した。(メモリの都合や、学習時間を抑えるためにすべての画像は用いなかった。)
+・6000 images were obtained from the dataset for each of male, female/smiling, and non-smiling, for a total of 24000 images. (We did not use all the images to save memory and training time.)
 
 ・学習データの枚数：テストデータの枚数 = 9:1 の比率とした  
 ・epoch数：3  
