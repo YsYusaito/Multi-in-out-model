@@ -51,7 +51,7 @@ python, pytorch, torchvision, cuda toolkit以外は最新版のものをイン�
 2. 学習データダウンロード
    - celebaの[公式サイト](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)にアクセス  
    - Google Driveをクリック  
-   ![celeba_google_drive](/uploads/0e9d642230c17ca4b305500f246878c1/celeba_google_drive.PNG)  
+   ![celeba_google_drive](https://user-images.githubusercontent.com/80863816/156318951-86513de3-fa6f-4578-b515-d9c92625680c.PNG)  
    - imgをクリック  
    ![celeba_img](https://user-images.githubusercontent.com/80863816/156318958-99702ed0-1aaa-4600-9864-90c1fae2db24.PNG)  
    - img_align_celeba.zipをダウンロード  
