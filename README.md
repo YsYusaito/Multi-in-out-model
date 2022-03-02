@@ -40,15 +40,15 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
 ・epoch数：3  
 ・ラーニングレート：0.0001
 
-[学習時のロス・精度]   
-・ロス     
+[Training loss・accuracy]   
+・loss     
 ![loss](https://user-images.githubusercontent.com/80863816/156318018-d3698a64-7fc8-48be-9e48-ede1326cbcb1.png)   
-・精度   
+・accuracy   
 ![acc](https://user-images.githubusercontent.com/80863816/156318005-aff1b6ad-b3be-4252-b1b1-0f0cb54d3a7b.png) 
 
-# モデル学習までの流れ
+# Procedure of model training
 1. git clone  
-   リンク：https://enosta.olympus.co.jp/gitlab_01/ai-community/model-zoo/multi-in-out-model.git
+   Link：https://enosta.olympus.co.jp/gitlab_01/ai-community/model-zoo/multi-in-out-model.git
 2. 学習データダウンロード
    - celebaの[公式サイト](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)にアクセス  
    - Google Driveをクリック  
