@@ -23,11 +23,11 @@ python, pytorch, torchvision, cuda toolkit以外は最新版のものをイン�
 ・[CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)  
 ・[CelebAとは](http://cedro3.com/ai/celeba-dataset-attribute/)
 
-![celeba_overview](/uploads/245e1f0dc51ee3fa0cb336a8ea1f46c2/celeba_overview.PNG)  
+![celeba_overview](https://user-images.githubusercontent.com/80863816/156318009-733d02b1-4027-4bcb-9438-a6607b34e0c5.PNG)  
 ↑のように、笑っている男女の画像が30万枚近くある。
 
 [ネットワーク構造]  
-![multi_inout_net](/uploads/d47b975faa7f82554ceba246275f95c1/multi_inout_net.PNG)   
+![multi_inout_network](https://user-images.githubusercontent.com/80863816/156318015-6f4096a6-8dfc-4809-9c08-2236d7123adb.PNG)   
 [ネットワークの元ネタ](https://dajiro.com/entry/2020/06/27/160255)
 
 ・学習では、画像が、male, femaleのどちらかなのか(第一のラベル)、smiling, non smilingのどちらなのか(第二のラベル)を判別できるようにした。
@@ -41,7 +41,7 @@ python, pytorch, torchvision, cuda toolkit以外は最新版のものをイン�
 
 [学習時のロス・精度]   
 ・ロス     
-![loss](/uploads/6733a60b457ea3f6f7dc731511bb3e7c/loss.png)   
+![loss](https://user-images.githubusercontent.com/80863816/156318018-d3698a64-7fc8-48be-9e48-ede1326cbcb1.png)   
 ・精度   
 ![acc](/uploads/b78dd896259049d6db0ce6c7cafcd325/acc.png)   
 
