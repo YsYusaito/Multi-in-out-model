@@ -32,10 +32,8 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
 [Original information of this network](https://dajiro.com/entry/2020/06/27/160255)
 
 ・In the learning process, we tried to determine whether the image was male or female (first label), and whether it was smiling or non-smiling (second label).  
-・The parameters of the entire model were updated by learning.
-
-・6000 images were obtained from the dataset for each of male, female/smiling, and non-smiling, for a total of 24000 images. (We did not use all the images to save memory and training time.)
-
+・The parameters of the entire model were updated by learning.  
+・6000 images were obtained from the dataset for each of male, female/smiling, and non-smiling, for a total of 24000 images. (We did not use all the images to save memory and training time.)  
 ・number of training data：number of test data = 9:1  
 ・epoch：4  
 ・learning rate：0.0001
