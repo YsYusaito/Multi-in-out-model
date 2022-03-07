@@ -87,7 +87,7 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
    # Inference
    Execute test_inference.py   
    If the following log is displayed, success.  
-   ![inference_log](https://user-images.githubusercontent.com/80863816/156318013-a4c16837-5f0b-4d1c-be59-6c96d2b50c24.PNG)  
+   ![inference_log](https://user-images.githubusercontent.com/80863816/156954833-77d8db3d-e8cc-4965-8d91-092fe28f33d2.PNG)  
    
    First element of y0_out： score of male   
    Second element of y0_out： score of female   
