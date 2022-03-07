@@ -40,7 +40,8 @@ class DataSet:
         for path_img in tqdm.tqdm(data_path_list):
             
             img = self.load_image(path_img)
-            img = np.array(img, dtype=np.float32)
+            
+            img = np.array(img)
             img = img.transpose(2, 0, 1)  # ch, height, width
             
             img_float = np.zeros((img.shape[0],img.shape[1],img.shape[2]), dtype=np.float32)
