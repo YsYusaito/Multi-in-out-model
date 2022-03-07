@@ -37,7 +37,7 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
 ・6000 images were obtained from the dataset for each of male, female/smiling, and non-smiling, for a total of 24000 images. (We did not use all the images to save memory and training time.)
 
 ・number of training data：number of test data = 9:1  
-・epoch：3  
+・epoch：4  
 ・learning rate：0.0001
 
 [Training loss・accuracy]   
