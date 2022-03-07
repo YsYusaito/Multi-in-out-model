@@ -42,9 +42,9 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
 
 [Training loss・accuracy]   
 ・loss     
-![loss](https://user-images.githubusercontent.com/80863816/156954274-28520cfb-62b3-4e5d-b7d2-934d59ec3944.png)
+![loss](https://user-images.githubusercontent.com/80863816/156954274-28520cfb-62b3-4e5d-b7d2-934d59ec3944.png)  
 ・accuracy   
-![acc](https://user-images.githubusercontent.com/80863816/156954256-539e745b-081b-472b-97a3-00db6cf8b8e5.png)
+![acc](https://user-images.githubusercontent.com/80863816/156954256-539e745b-081b-472b-97a3-00db6cf8b8e5.png)  
 
 # Procedure of model training
 1. git clone  
