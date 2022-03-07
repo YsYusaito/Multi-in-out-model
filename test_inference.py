@@ -3,8 +3,12 @@ import torchvision.models as models
 import numpy as np
 import tqdm
 from PIL import Image
+import math
 
 import multi_inout_net
+
+label_1 = ["male", "female"]
+label_2 = ["smile", "non-smile"]
 
 class Preprocess:
     def __init__(self, data_path_list):
@@ -36,7 +40,8 @@ class Preprocess:
         for path_img in tqdm.tqdm(data_path_list):
             
             img = self.load_image(path_img)
-            img = np.array(img, dtype=np.float32)
+            
+            img = np.array(img)
             img = img.transpose(2, 0, 1)  # ch, height, width
             
             img_float = np.zeros((img.shape[0],img.shape[1],img.shape[2]), dtype=np.float32)
@@ -81,6 +86,18 @@ class Preprocess:
         return torch.from_numpy(self.img_data.astype(np.float32)).clone(), torch.from_numpy(self.hist_R.astype(np.float32)).clone(),\
             torch.from_numpy(self.hist_G.astype(np.float32)).clone(), torch.from_numpy(self.hist_B.astype(np.float32)).clone()
 
+def get_class_prob(out):
+    fval = 0
+    prob = 0
+    
+    for i in range(out.shape[1]):
+        fval = abs(1/(1+math.exp(out[0][i]*(-1))))
+        
+        if fval > prob:
+            class_no = i
+            prob = fval
+    return class_no, prob
+    
 
 resnet = models.resnet50()
 model = multi_inout_net.Net(resnet)
@@ -114,8 +131,24 @@ print('--- start inference ---')
 y0_out, y1_out = model(image, h1, h2, h3)
 print('--- end inference ---')
 
+
+
+y0_out = y0_out.to('cpu').detach().numpy().copy()
+
+y1_out = y1_out.to('cpu').detach().numpy().copy()
+
 #y0_outの1番目の要素:maleのスコア, y0_outの2番目の要素:femaleのスコア
 print('y0_out', y0_out)
 
 #y1_outの1番目の要素:smileのスコア, y1_outの2番目の要素:non smileのスコア
 print('y1_out', y1_out)
+
+
+y0_class_no, y0_prob =  get_class_prob(y0_out)
+y1_class_no, y1_prob =  get_class_prob(y1_out)
+
+print('y0_class_no', y0_class_no, ',', label_1[y0_class_no])
+print('y0_prob', y0_prob)
+
+print('y1_class_no', y1_class_no, ',',label_2[y1_class_no])
+print('y1_prob', y1_prob)
