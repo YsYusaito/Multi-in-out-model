@@ -28,7 +28,7 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
 ↑There are nearly 300,000 images of men and women laughing.
 
 [Network]  
-![multi_inout_network](https://user-images.githubusercontent.com/80863816/156318015-6f4096a6-8dfc-4809-9c08-2236d7123adb.PNG)   
+![multi_inout_net](https://user-images.githubusercontent.com/80863816/157649334-87621859-efd0-4821-b953-6ce21eea7038.PNG)   
 [Original information of this network](https://dajiro.com/entry/2020/06/27/160255)
 
 ・In the learning process, we tried to determine whether the image was male or female (first label), and whether it was smiling or non-smiling (second label).  
