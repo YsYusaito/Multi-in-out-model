@@ -40,9 +40,9 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
 
 [Training loss・accuracy]   
 ・loss     
-![loss](https://user-images.githubusercontent.com/80863816/156954274-28520cfb-62b3-4e5d-b7d2-934d59ec3944.png)  
+![loss](https://user-images.githubusercontent.com/80863816/157786528-3562c73f-e6aa-4e74-aeb1-7774e78ba81f.png)  
 ・accuracy   
-![acc](https://user-images.githubusercontent.com/80863816/156954256-539e745b-081b-472b-97a3-00db6cf8b8e5.png)  
+![acc](https://user-images.githubusercontent.com/80863816/157786519-6644ba9c-bf74-485b-baf0-431db63a33e3.png)  
 
 # Procedure of model training
 1. git clone  
@@ -87,7 +87,7 @@ Please install the appropriate versions of the cuda tool kit, pytorch, and torch
    # Inference
    Execute test_inference.py   
    If the following log is displayed, success.  
-   ![inference_log](https://user-images.githubusercontent.com/80863816/156954833-77d8db3d-e8cc-4965-8d91-092fe28f33d2.PNG)  
+   ![inference_log](https://user-images.githubusercontent.com/80863816/157786588-4888fe7e-97e3-43b3-b39a-452d8bd8171f.PNG)  
    
    First element of y0_out： score of male   
    Second element of y0_out： score of female   
