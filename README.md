@@ -8,7 +8,7 @@ GPU:Quadro RTX 6000
 ・pytorch 1.6.0  
 ・torchvision 0.7.0  
 ・cuda tool kit 10.1  
-・numpy 1.21.2  
+・numpy 1.21.5  
 ・matplotlib 3.5.0  
 ・scikit-learn 1.0.2  
 ・pillow 8.4.0  
